@@ -7,6 +7,15 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    { pattern: /^bg-(forsythia|saffron|nocturnal|powder|mint|oceanic)$/ },
+    { pattern: /^text-(forsythia|saffron|nocturnal|powder|mint|oceanic)$/ },
+    { pattern: /^from-(forsythia|saffron|nocturnal|powder|mint|oceanic)$/ },
+    { pattern: /^to-(forsythia|saffron|nocturnal|powder|mint|oceanic)$/ },
+    { pattern: /^via-(forsythia|saffron|nocturnal|powder|mint|oceanic)$/ },
+    { pattern: /^border-(forsythia|saffron|nocturnal|powder|mint|oceanic)$/ },
+    { pattern: /^shadow-(forsythia|saffron|nocturnal|powder|mint|oceanic)$/ },
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -47,12 +56,12 @@ const config: Config = {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
-        powder: '#F1F6F4',
-        forsythia: '#FFC801',
-        nocturnal: '#114C5A',
-        mint: '#D9E8E2',
-        saffron: '#FF9932',
-        oceanic: '#172B36',
+        powder: 'rgb(var(--color-powder) / <alpha-value>)',
+        forsythia: 'rgb(var(--color-forsythia) / <alpha-value>)',
+        nocturnal: 'rgb(var(--color-nocturnal) / <alpha-value>)',
+        mint: 'rgb(var(--color-mint) / <alpha-value>)',
+        saffron: 'rgb(var(--color-saffron) / <alpha-value>)',
+        oceanic: 'rgb(var(--color-oceanic) / <alpha-value>)',
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -90,8 +99,8 @@ const config: Config = {
           to: { opacity: '1', transform: 'translateY(0)' },
         },
         'pulse-glow': {
-          '0%, 100%': { boxShadow: '0 0 20px rgba(56, 189, 248, 0.2)' },
-          '50%': { boxShadow: '0 0 40px rgba(56, 189, 248, 0.4)' },
+          '0%, 100%': { boxShadow: '0 0 20px rgba(255, 200, 1, 0.2)' },
+          '50%': { boxShadow: '0 0 40px rgba(255, 200, 1, 0.4)' },
         },
         'gradient-shift': {
           '0%, 100%': { backgroundPosition: '0% center' },

@@ -35,6 +35,14 @@
   --entrance-duration: 400ms;
 
   --section-padding: 7rem;
+
+  /* Palette RGB channels for opacity modifier support */
+  --color-forsythia: 255 200 1;
+  --color-saffron: 255 153 50;
+  --color-nocturnal: 17 76 90;
+  --color-powder: 241 246 244;
+  --color-mint: 217 232 226;
+  --color-oceanic: 23 43 54;
 }
 
 @layer base {
@@ -249,10 +257,10 @@
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+    box-shadow: 0 0 20px rgba(255, 200, 1, 0.2);
   }
   50% {
-    box-shadow: 0 0 40px rgba(56, 189, 248, 0.4);
+    box-shadow: 0 0 40px rgba(255, 200, 1, 0.4);
   }
 }
 
