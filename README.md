@@ -5,7 +5,7 @@ A premium, responsive SaaS landing page built for an **AI-driven Data Automation
 ## 🌐 Live Demo
 
 Production URL:  
-https://ai-data-automation-9q4k3ogef-vaishnavijha006-3492s-projects.vercel.app/
+https://ai-data-automation-puiabq2m4-vaishnavijha006-3492s-projects.vercel.app/
 
 ## 📂 GitHub Repository
 
