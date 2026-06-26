@@ -47,6 +47,12 @@ const config: Config = {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
+        powder: '#F1F6F4',
+        forsythia: '#FFC801',
+        nocturnal: '#114C5A',
+        mint: '#D9E8E2',
+        saffron: '#FF9932',
+        oceanic: '#172B36',
       },
       borderRadius: {
         lg: 'var(--radius)',

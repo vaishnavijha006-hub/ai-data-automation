@@ -50,7 +50,7 @@ export default function Navbar() {
               className="flex items-center gap-3 group"
               aria-label="NEXUS AI - Go to homepage"
             >
-              <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-sky-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-sky-500/20 transition-transform group-hover:scale-105">
+              <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-forsythia to-saffron flex items-center justify-center shadow-lg shadow-forsythia/20 transition-transform group-hover:scale-105">
                 <svg className="h-5 w-5 text-background" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 2L2 7l10 5 10-5-10-5z" />
                   <path d="M2 17l10 5 10-5" />
@@ -68,7 +68,7 @@ export default function Navbar() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-hover font-body relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-gradient-to-r after:from-sky-500 after:to-cyan-400 hover:after:w-full after:transition-all after:duration-300"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-hover font-body relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-gradient-to-r after:from-forsythia after:to-saffron hover:after:w-full after:transition-all after:duration-300"
                 >
                   {link.label}
                 </a>

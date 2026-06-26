@@ -81,7 +81,7 @@ export default function Footer() {
     <footer className="relative pt-20 pb-12 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-grid opacity-30" />
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-radial from-cyan-500/8 to-transparent rounded-full opacity-60" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-radial from-saffron/8 to-transparent rounded-full opacity-60" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Main footer */}
@@ -90,7 +90,7 @@ export default function Footer() {
             {/* Brand column */}
             <div className="col-span-2 mb-6 md:mb-0">
               <a href="/" className="inline-flex items-center gap-3 mb-6">
-                <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-sky-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-sky-500/20">
+                <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-forsythia to-saffron flex items-center justify-center shadow-lg shadow-forsythia/20">
                   <svg className="h-6 w-6 text-background" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 2L2 7l10 5 10-5-10-5z" />
                     <path d="M2 17l10 5 10-5" />

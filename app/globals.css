@@ -3,32 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 2%;
-  --foreground: 0 0% 98%;
-  --card: 0 0% 4%;
-  --card-foreground: 0 0% 98%;
-  --popover: 0 0% 4%;
-  --popover-foreground: 0 0% 98%;
-  --primary: 200 100% 50%;
-  --primary-foreground: 0 0% 5%;
-  --secondary: 0 0% 8%;
-  --secondary-foreground: 0 0% 98%;
-  --muted: 0 0% 10%;
-  --muted-foreground: 0 0% 55%;
-  --accent: 170 100% 45%;
-  --accent-foreground: 0 0% 5%;
+  --background: 201 40% 11%;
+  --foreground: 156 17% 96%;
+  --card: 201 40% 15%;
+  --card-foreground: 156 17% 96%;
+  --popover: 201 40% 15%;
+  --popover-foreground: 156 17% 96%;
+  --primary: 47 100% 50%;
+  --primary-foreground: 201 40% 15%;
+  --secondary: 192 68% 21%;
+  --secondary-foreground: 156 17% 96%;
+  --muted: 192 68% 16%;
+  --muted-foreground: 156 25% 80%;
+  --accent: 30 100% 60%;
+  --accent-foreground: 201 40% 15%;
   --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 0 0% 98%;
-  --border: 0 0% 12%;
-  --input: 0 0% 12%;
-  --ring: 200 100% 50%;
+  --destructive-foreground: 156 17% 96%;
+  --border: 192 68% 21%;
+  --input: 192 68% 21%;
+  --ring: 47 100% 50%;
   --radius: 1rem;
 
-  --glass-bg: rgba(8, 8, 12, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.06);
-  --glass-highlight: rgba(255, 255, 255, 0.03);
-  --glow-primary: 0 0 60px rgba(56, 189, 248, 0.15);
-  --glow-accent: 0 0 60px rgba(20, 184, 166, 0.15);
+  --glass-bg: rgba(23, 43, 54, 0.7);
+  --glass-border: rgba(217, 232, 226, 0.08);
+  --glass-highlight: rgba(255, 200, 1, 0.03);
+  --glow-primary: 0 0 60px rgba(255, 200, 1, 0.15);
+  --glow-accent: 0 0 60px rgba(255, 153, 50, 0.15);
 
   --hover-duration: 180ms;
   --layout-duration: 350ms;
@@ -132,7 +132,7 @@
   }
 
   .bg-radial-glow {
-    background: radial-gradient(ellipse 100% 70% at 50% -20%, rgba(56, 189, 248, 0.12), transparent 70%);
+    background: radial-gradient(ellipse 100% 70% at 50% -20%, rgba(255, 200, 1, 0.12), transparent 70%);
   }
 
   .transition-hover {
@@ -152,11 +152,11 @@
 @layer components {
   .btn-primary {
     @apply inline-flex items-center justify-center font-semibold;
-    @apply bg-gradient-to-r from-sky-500 via-cyan-400 to-teal-400 text-background;
+    @apply bg-gradient-to-r from-forsythia to-saffron text-background;
     @apply rounded-xl px-8 py-4 text-base;
     box-shadow:
-      0 0 0 1px rgba(56, 189, 248, 0.3),
-      0 4px 24px rgba(56, 189, 248, 0.25),
+      0 0 0 1px rgba(255, 200, 1, 0.3),
+      0 4px 24px rgba(255, 200, 1, 0.25),
       inset 0 1px 0 rgba(255, 255, 255, 0.2);
     transition: all var(--hover-duration) ease-out;
     font-family: var(--font-inter), sans-serif;
@@ -165,8 +165,8 @@
   .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow:
-      0 0 0 1px rgba(56, 189, 248, 0.5),
-      0 8px 32px rgba(56, 189, 248, 0.35),
+      0 0 0 1px rgba(255, 200, 1, 0.5),
+      0 8px 32px rgba(255, 200, 1, 0.35),
       inset 0 1px 0 rgba(255, 255, 255, 0.3);
   }
 

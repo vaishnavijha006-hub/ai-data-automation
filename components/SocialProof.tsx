@@ -66,7 +66,7 @@ function StarRating({ rating }: { rating: number }) {
       {Array.from({ length: 5 }).map((_, i) => (
         <svg
           key={i}
-          className={`h-5 w-5 ${i < rating ? 'text-yellow-400' : 'text-muted-foreground/20'}`}
+          className={`h-5 w-5 ${i < rating ? 'text-forsythia' : 'text-muted-foreground/20'}`}
           viewBox="0 0 24 24"
           fill="currentColor"
         >
@@ -97,7 +97,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
       {/* Author */}
       <footer className="flex items-center gap-4 pt-6 border-t border-white/10">
         <div className="relative">
-          <div className="h-12 w-12 rounded-full bg-gradient-to-br from-sky-500 to-cyan-400 flex items-center justify-center text-background font-bold text-sm">
+          <div className="h-12 w-12 rounded-full bg-gradient-to-br from-forsythia to-saffron flex items-center justify-center text-background font-bold text-sm">
             {initials}
           </div>
           <div className="absolute -bottom-1 -right-1 h-4 w-4 rounded-full bg-emerald-500 border-2 border-background flex items-center justify-center">
@@ -132,7 +132,7 @@ export default function SocialProof() {
     <section id="testimonials" className="section-padding relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-grid opacity-40" />
-      <div className="absolute bottom-1/3 left-1/3 w-[600px] h-[600px] bg-cyan-500/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/3 left-1/3 w-[600px] h-[600px] bg-saffron/5 rounded-full blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section header */}
@@ -193,7 +193,7 @@ export default function SocialProof() {
 
         {/* Final CTA */}
         <div className="mt-20 text-center glass rounded-3xl p-12 lg:p-16 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-sky-500/5 via-transparent to-cyan-500/5" />
+          <div className="absolute inset-0 bg-gradient-to-br from-forsythia/5 via-transparent to-saffron/5" />
           <div className="relative z-10">
             <h3 className="text-2xl lg:text-3xl font-semibold text-foreground mb-4">
               Ready to Transform Your Data Operations?

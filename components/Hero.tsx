@@ -50,16 +50,16 @@ function NetworkDiagram() {
     >
       <defs>
         <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="rgba(56, 189, 248, 0.4)" />
-          <stop offset="100%" stopColor="rgba(56, 189, 248, 0)" />
+          <stop offset="0%" stopColor="rgba(255, 200, 1, 0.4)" />
+          <stop offset="100%" stopColor="rgba(255, 200, 1, 0)" />
         </radialGradient>
         <radialGradient id="accentGlow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="rgba(20, 184, 166, 0.4)" />
-          <stop offset="100%" stopColor="rgba(20, 184, 166, 0)" />
+          <stop offset="0%" stopColor="rgba(255, 153, 50, 0.4)" />
+          <stop offset="100%" stopColor="rgba(255, 153, 50, 0)" />
         </radialGradient>
         <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="rgba(56, 189, 248, 0.3)" />
-          <stop offset="100%" stopColor="rgba(20, 184, 166, 0.3)" />
+          <stop offset="0%" stopColor="rgba(255, 200, 1, 0.3)" />
+          <stop offset="100%" stopColor="rgba(255, 153, 50, 0.3)" />
         </linearGradient>
       </defs>
 
@@ -83,52 +83,52 @@ function NetworkDiagram() {
       {/* Outer nodes */}
       <g>
         <circle cx="100" cy="100" r="24" fill="url(#accentGlow)" />
-        <circle cx="100" cy="100" r="12" fill="rgba(20, 184, 166, 0.9)" />
+        <circle cx="100" cy="100" r="12" fill="rgba(255, 153, 50, 0.9)" />
         <circle cx="100" cy="100" r="5" fill="white" />
       </g>
       <g>
         <circle cx="400" cy="100" r="24" fill="url(#accentGlow)" />
-        <circle cx="400" cy="100" r="12" fill="rgba(20, 184, 166, 0.9)" />
+        <circle cx="400" cy="100" r="12" fill="rgba(255, 153, 50, 0.9)" />
         <circle cx="400" cy="100" r="5" fill="white" />
       </g>
       <g>
         <circle cx="100" cy="300" r="24" fill="url(#accentGlow)" />
-        <circle cx="100" cy="300" r="12" fill="rgba(20, 184, 166, 0.9)" />
+        <circle cx="100" cy="300" r="12" fill="rgba(255, 153, 50, 0.9)" />
         <circle cx="100" cy="300" r="5" fill="white" />
       </g>
       <g>
         <circle cx="400" cy="300" r="24" fill="url(#accentGlow)" />
-        <circle cx="400" cy="300" r="12" fill="rgba(20, 184, 166, 0.9)" />
+        <circle cx="400" cy="300" r="12" fill="rgba(255, 153, 50, 0.9)" />
         <circle cx="400" cy="300" r="5" fill="white" />
       </g>
 
       {/* Top and bottom nodes */}
       <g>
         <circle cx="250" cy="50" r="16" fill="url(#nodeGlow)" />
-        <circle cx="250" cy="50" r="8" fill="rgba(56, 189, 248, 0.8)" />
+        <circle cx="250" cy="50" r="8" fill="rgba(255, 200, 1, 0.8)" />
       </g>
       <g>
         <circle cx="250" cy="350" r="16" fill="url(#nodeGlow)" />
-        <circle cx="250" cy="350" r="8" fill="rgba(56, 189, 248, 0.8)" />
+        <circle cx="250" cy="350" r="8" fill="rgba(255, 200, 1, 0.8)" />
       </g>
 
       {/* Central brain node */}
       <g>
         <circle cx="250" cy="200" r="48" fill="url(#nodeGlow)" />
-        <circle cx="250" cy="200" r="28" fill="rgba(56, 189, 248, 0.85)" stroke="rgba(255,255,255,0.3)" strokeWidth="1" />
+        <circle cx="250" cy="200" r="28" fill="rgba(255, 200, 1, 0.85)" stroke="rgba(255,255,255,0.3)" strokeWidth="1" />
         <circle cx="250" cy="200" r="12" fill="white" />
       </g>
 
       {/* Data particles */}
-      <circle r="4" fill="rgba(56, 189, 248, 0.9)">
+      <circle r="4" fill="rgba(255, 200, 1, 0.9)">
         <animateMotion dur="3s" repeatCount="indefinite" path="M250,200 L100,100" />
         <animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite" />
       </circle>
-      <circle r="3" fill="rgba(20, 184, 166, 0.9)">
+      <circle r="3" fill="rgba(255, 153, 50, 0.9)">
         <animateMotion dur="3s" repeatCount="indefinite" path="M250,200 L400,300" begin="0.5s" />
         <animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite" begin="0.5s" />
       </circle>
-      <circle r="3" fill="rgba(56, 189, 248, 0.9)">
+      <circle r="3" fill="rgba(255, 200, 1, 0.9)">
         <animateMotion dur="2.5s" repeatCount="indefinite" path="M250,200 L250,50" begin="1s" />
         <animate attributeName="opacity" values="0;1;1;0" dur="2.5s" repeatCount="indefinite" begin="1s" />
       </circle>
@@ -144,8 +144,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-radial-glow" />
 
       {/* Floating gradient orbs */}
-      <div className="absolute top-1/4 -left-32 w-64 h-64 bg-sky-500/20 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-cyan-500/15 rounded-full blur-3xl animate-float animation-delay-400" />
+      <div className="absolute top-1/4 -left-32 w-64 h-64 bg-forsythia/20 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-saffron/15 rounded-full blur-3xl animate-float animation-delay-400" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
@@ -154,8 +154,8 @@ export default function Hero() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-xs uppercase tracking-widest text-muted-foreground mb-8 animate-fade-up">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-400"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-forsythia opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-forsythia"></span>
               </span>
               Now with GPT-5 Integration
             </div>
@@ -197,7 +197,7 @@ export default function Hero() {
                   key={badge.name}
                   className="flex items-center gap-2 px-4 py-2 rounded-xl glass text-muted-foreground transition-hover hover:text-foreground"
                 >
-                  <span className="text-cyan-400">
+                  <span className="text-forsythia">
                     {badge.icon === 'shield' && <ShieldIcon />}
                     {badge.icon === 'badge-check' && <BadgeCheckIcon />}
                     {badge.icon === 'lock' && <LockIcon />}
@@ -229,8 +229,8 @@ export default function Hero() {
                 <NetworkDiagram />
               </div>
               {/* Ambient glow */}
-              <div className="absolute -inset-8 rounded-full bg-gradient-to-br from-sky-500/10 via-cyan-400/5 to-teal-500/10 blur-3xl -z-10" />
-              <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 w-3/4 h-24 bg-cyan-400/10 blur-3xl" />
+              <div className="absolute -inset-8 rounded-full bg-gradient-to-br from-forsythia/10 via-saffron/5 to-nocturnal/10 blur-3xl -z-10" />
+              <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 w-3/4 h-24 bg-forsythia/10 blur-3xl" />
             </div>
           </div>
         </div>

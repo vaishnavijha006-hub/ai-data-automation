@@ -155,7 +155,7 @@ const PriceDisplay = memo(function PriceDisplay({ tierId, currency, cycle }: Pri
       {cycle === 'annual' && (
         <div className="mt-2">
           <span className="text-sm text-muted-foreground line-through mr-2">{originalPrice}</span>
-          <span className="text-sm text-cyan-400 font-body">Save {savings}/year</span>
+          <span className="text-sm text-forsythia font-body">Save {savings}/year</span>
         </div>
       )}
       <span className="text-sm text-muted-foreground font-body mt-1">
@@ -191,7 +191,7 @@ const PricingCard = memo(function PricingCard({ tierId, currency, cycle }: Prici
     >
       {/* Badge for highlighted tier */}
       {tier.badge && (
-        <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full text-sm font-semibold text-background shadow-lg shadow-sky-500/30">
+        <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 bg-gradient-to-r from-forsythia to-saffron rounded-full text-sm font-semibold text-background shadow-lg shadow-forsythia/30">
           {tier.badge}
         </div>
       )}
@@ -211,7 +211,7 @@ const PricingCard = memo(function PricingCard({ tierId, currency, cycle }: Prici
       <ul className="space-y-4 mb-10 flex-grow">
         {tier.features.map((feature) => (
           <li key={feature} className="flex items-start gap-3 text-muted-foreground font-body">
-            <svg className={`h-5 w-5 flex-shrink-0 mt-0.5 ${isHighlighted ? 'text-cyan-400' : 'text-sky-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg className={`h-5 w-5 flex-shrink-0 mt-0.5 ${isHighlighted ? 'text-saffron' : 'text-forsythia'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="m5 12 5 5L20 7" />
             </svg>
             <span className="leading-relaxed">{feature}</span>
@@ -225,7 +225,7 @@ const PricingCard = memo(function PricingCard({ tierId, currency, cycle }: Prici
           w-full py-4 px-6 rounded-xl font-semibold font-body text-base
           transition-all duration-hover
           ${isHighlighted
-            ? 'bg-gradient-to-r from-sky-500 via-cyan-400 to-teal-400 text-background shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 hover:scale-[1.02]'
+            ? 'bg-gradient-to-r from-forsythia to-saffron text-background shadow-lg shadow-forsythia/25 hover:shadow-forsythia/40 hover:scale-[1.02]'
             : 'glass border-2 border-white/10 text-foreground hover:border-white/25 hover:bg-white/5'
           }
         `}
@@ -253,8 +253,8 @@ export default function Pricing() {
     <section id="pricing" className="section-padding relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-grid" />
-      <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-cyan-500/5 rounded-full blur-3xl" />
-      <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-sky-500/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-saffron/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-forsythia/5 rounded-full blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section header */}
@@ -297,7 +297,7 @@ export default function Pricing() {
               }`}
             >
               Annual
-              <span className="px-2 py-0.5 rounded-full bg-cyan-400/20 text-cyan-400 text-xs font-medium">
+              <span className="px-2 py-0.5 rounded-full bg-forsythia/20 text-forsythia text-xs font-medium">
                 -{Math.round(pricingMatrix.annualDiscount * 100)}%
               </span>
             </button>

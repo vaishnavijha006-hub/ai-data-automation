@@ -14,18 +14,18 @@ function FeatureCard({ feature, isActive }: { feature: Feature; isActive: boolea
       `}
     >
       {/* Gradient overlay */}
-      <div className={`absolute inset-0 bg-gradient-to-br from-sky-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${isActive ? 'opacity-100' : ''}`} />
+      <div className={`absolute inset-0 bg-gradient-to-br from-forsythia/5 to-saffron/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${isActive ? 'opacity-100' : ''}`} />
 
       <div className="relative z-10">
         <div className={`
           inline-flex items-center justify-center w-14 h-14 rounded-xl mb-6
           ${isActive
-            ? 'bg-gradient-to-br from-sky-500 to-cyan-400 shadow-lg shadow-sky-500/30'
+            ? 'bg-gradient-to-br from-forsythia to-saffron shadow-lg shadow-forsythia/30'
             : 'glass group-hover:border-white/20'
           }
           transition-all duration-300
         `}>
-          <span className={`${isActive ? 'text-background' : 'text-sky-400'} transition-colors`}>
+          <span className={`${isActive ? 'text-background' : 'text-forsythia'} transition-colors`}>
             {iconEl}
           </span>
         </div>
@@ -87,7 +87,7 @@ function FeatureAccordion({ activeId, onActivate }: { activeId: string; onActiva
         return (
           <div
             key={feature.id}
-            className={`glass rounded-2xl overflow-hidden transition-all duration-300 ${isOpen ? 'border-sky-500/30' : ''}`}
+            className={`glass rounded-2xl overflow-hidden transition-all duration-300 ${isOpen ? 'border-forsythia/30' : ''}`}
           >
             <button
               type="button"
@@ -98,9 +98,9 @@ function FeatureAccordion({ activeId, onActivate }: { activeId: string; onActiva
               <div className="flex items-center gap-4">
                 <div className={`
                   flex items-center justify-center w-12 h-12 rounded-xl
-                  ${isOpen ? 'bg-gradient-to-br from-sky-500 to-cyan-400' : 'glass'}
+                  ${isOpen ? 'bg-gradient-to-br from-forsythia to-saffron' : 'glass'}
                 `}>
-                  <span className={isOpen ? 'text-background' : 'text-sky-400'}>
+                  <span className={isOpen ? 'text-background' : 'text-forsythia'}>
                     {iconEl}
                   </span>
                 </div>
@@ -109,7 +109,7 @@ function FeatureAccordion({ activeId, onActivate }: { activeId: string; onActiva
                 </span>
               </div>
               <svg
-                className={`h-5 w-5 text-muted-foreground transition-layout ${isOpen ? 'rotate-180 text-sky-400' : ''}`}
+                className={`h-5 w-5 text-muted-foreground transition-layout ${isOpen ? 'rotate-180 text-forsythia' : ''}`}
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -168,7 +168,7 @@ export default function FeatureShowcase() {
     <section id="features" className="section-padding relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 bg-grid" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-gradient-radial from-sky-500/8 to-transparent" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-gradient-radial from-forsythia/8 to-transparent" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section header */}
